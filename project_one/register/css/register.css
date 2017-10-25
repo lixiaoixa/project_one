@@ -1,0 +1,397 @@
+#register{
+	width: 965px;
+	height: 620px;
+	margin: 20px auto 0px;
+	padding-top: 75px;
+}
+#register .left{
+	width: 600px;
+	height: 474px;
+	float: left;
+}
+#register .left .logo{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+#register .left .qr{
+	position: absolute;
+    width: 88px;
+    height: 88px;
+    display: block;
+    left: 192px;
+    top: 504px;
+}
+#register .right{
+	float: right;
+	margin-top: 6px;
+	width: 304px;
+	height: 454px;
+    box-shadow: 0 0 4px rgba(0,0,0,.075);
+    padding: 0 20px 20px 20px;
+    margin-right: 6px;
+}
+#register .right .top{
+	width: 304px;
+	color: #E31256;
+    height: 60px;
+    line-height: 60px;
+    margin-bottom: 13px;
+}
+#register .right .top .l{
+	width: 80px;
+	height: 60px;
+	display: block;
+	float: left;
+	font-size: 20px;
+	color: #f450a2;
+}
+#register .right .top .r{
+	width: 152px;
+	height: 60px;
+	display: block;
+	float: right;
+}
+#register .right .top .r i{
+	font-style: normal;
+	color: #f450a2 ;
+	font-size: 12px;
+}
+#register .right .top .r a{
+	font-size: 12px;
+	color: #666666;
+}
+#register .right form{
+	width: 304px;
+	height: 381px;
+	display: block;
+	position: relative;
+}
+#register .right form .number{
+	background-color: #FFF;
+    border: 1px solid #CFCFCF;
+    box-shadow: 0 0 2px 1px rgba(207,207,207,.4) inset;
+    height: 37px;
+    width: 302px;
+    margin-bottom: 17px;
+    position: relative;
+}
+#register .right form .number .number_tip{
+	width: auto;
+	height: 22px;
+	position: absolute;
+	left:8px;
+	top:-34px;
+	display: none;
+}
+#register .right form .number .number_tip p{
+	font-size: 12px;
+	color: #666;
+    line-height: 20px;
+    border: 1px solid #ffbdbf;
+    background: snow;
+    height: 22px;
+    width: auto;
+    text-align: center;
+    padding: 0px 6px 0px 6px;
+}
+#register .right form .number .number_tip img{
+	width: 14px;
+	height: 8px;
+	display: block;
+	position: absolute;
+	left:10px;
+	top:14px;
+}
+#register .right form .number img{
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin: 9px 0px;
+	float: left;
+}
+#register .right form .number input{
+	background: none repeat scroll 0 0 rgba(0,0,0,0);
+    border:none;
+    color: #000;
+    font-size: 14px;
+    height: 39px;
+    line-height:39px;
+    outline:none;
+    width: 280px;
+    float: left;
+    padding-left: 2px;	
+}
+#register .right form .ck{
+	background-color: #FFF;
+    border: 1px solid #CFCFCF;
+    box-shadow: 0 0 2px 1px rgba(207,207,207,.4) inset;
+    height: 37px;
+    width: 302px;
+    margin-bottom: 17px;
+    position: relative;
+}
+#register .right form .ck .ck_tip{
+	width: auto;
+	height: 22px;
+	position: absolute;
+	left:8px;
+	top:-34px;
+	display:none;
+}
+#register .right form .ck .ck_tip p{
+	font-size: 12px;
+	color: #666;
+    line-height: 20px;
+    border: 1px solid #ffbdbf;
+    background: snow;
+    height: 22px;
+    width: auto;
+    text-align: center;
+    padding: 0px 6px 0px 6px;
+}
+#register .right form .ck .ck_tip img{
+	width: 14px;
+	height: 8px;
+	display: block;
+	position: absolute;
+	left:10px;
+	top:23px;
+}
+#register .right form .ck input{
+	background: none repeat scroll 0 0 rgba(0,0,0,0);
+    border:none;
+    color: #000;
+    font-size: 14px;
+    height: 39px;
+    line-height:39px;
+    outline:none;
+    width: 220px;
+    float: left;
+    padding-left: 2px;	
+}
+#register .right form .ck  .verify{
+	background: #EEEEEE;
+	box-shadow: 0 0 1px 1px rgba(207,207,207,.4) inset;
+    color: #444;
+    font-size: 16px;
+    height: 38px;
+    line-height:38px;
+    width: 80px;
+    letter-spacing: 4px;
+    color: #F450A2;
+    cursor: pointer;
+    float: right;
+    text-align: center;
+}
+
+#register .right form .password{
+	background-color: #FFF;
+    border: 1px solid #CFCFCF;
+    box-shadow: 0 0 2px 1px rgba(207,207,207,.4) inset;
+    height: 37px;
+    width: 302px;
+    margin-bottom: 17px;
+    position: relative;
+}
+#register .right form .password .password_tip{
+	width: auto;
+	height: 44px;
+	position: absolute;
+	left:8px;
+	top:-50px;
+	display:none;
+}
+#register .right form .password .password_tip p{
+	font-size: 12px;
+	color: #666;
+    line-height: 20px;
+    border: 1px solid #ffbdbf;
+    background: snow;
+    height: 40px;
+    width: auto;
+   /* text-align: center;*/
+    padding: 0px 6px 0px 6px;
+}
+#register .right form .password .password_tip img{
+	width: 14px;
+	height: 8px;
+	display: block;
+	position: absolute;
+	left:10px;
+	top:32px;
+}
+#register .right form .password img{
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin: 9px 0px;
+	float: left;
+}
+#register .right form .password input{
+	background: none repeat scroll 0 0 rgba(0,0,0,0);
+    border:none;
+    color: #000;
+    font-size: 14px;
+    height: 39px;
+    line-height:39px;
+    outline:none;
+    width: 278px;
+    float: left;
+    padding-left: 4px;	
+}
+#register .right form .repassword{
+	background-color: #FFF;
+    border: 1px solid #CFCFCF;
+    box-shadow: 0 0 2px 1px rgba(207,207,207,.4) inset;
+    height: 37px;
+    width: 302px;
+    margin-bottom: 17px;
+    position: relative;
+}
+#register .right form .repassword .repassword_tip{
+	width: auto;
+	height: 22px;
+	position: absolute;
+	left:8px;
+	top:-34px;
+	display:none;
+}
+#register .right form .repassword .repassword_tip p{
+	font-size: 12px;
+	color: #666;
+    line-height: 20px;
+    border: 1px solid #ffbdbf;
+    background: snow;
+    height: 22px;
+    width: auto;
+    text-align: center;
+    padding: 0px 6px 0px 6px;
+}
+#register .right form .repassword .repassword_tip img{
+	width: 14px;
+	height: 8px;
+	display: block;
+	position: absolute;
+	left:10px;
+	top:14px;
+}
+#register .right form .repassword img{
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin: 9px 0px;
+	float: left;
+}
+#register .right form .repassword input{
+	background: none repeat scroll 0 0 rgba(0,0,0,0);
+    border:none;
+    color: #000;
+    font-size: 14px;
+    height: 39px;
+    line-height:39px;
+    outline:none;
+    width: 278px;
+    float: left;
+    padding-left: 4px;	
+}
+#register .right form .check{
+	width: 304px;
+	height: 17px;
+    font-family: Verdana,Geneva,sans-serif;
+    color: #a9a9a9;
+    font-size: 14px;
+    margin-top: 26px;
+    position: relative;
+}
+#register .right form .check .check_tip{
+	width: auto;
+	height: 22px;
+	position: absolute;
+	left:8px;
+	top:-34px;
+	display:none;
+}
+#register .right form .check .check_tip p{
+	font-size: 12px;
+	color: #666;
+    line-height: 20px;
+    border: 1px solid #ffbdbf;
+    background: snow;
+    height: 22px;
+    width: auto;
+    text-align: center;
+    padding: 0px 6px 0px 6px;
+}
+#register .right form .check .check_tip img{
+	width: 14px;
+	height: 8px;
+	display: block;
+	position: absolute;
+	left:10px;
+	top:23px;
+}
+#register .right form .check input{
+	font-size: 12px;
+    font-family: inherit;
+    vertical-align: -2px;
+}
+#register .right form .check span{
+	padding-left: 6px;
+	border-color: #252C34;
+}
+#register .right form  .check a{
+	color: #f450a2;
+	font-size: 14px;
+}
+#register .right form .btn{
+	background-color: #F450A2;
+    border-radius: 2px;
+    width: 283px;
+    height: 41px;
+    line-height: 41px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    cursor: pointer;
+    margin-top: 26px;
+    text-align: center;
+}
+/*#register .right form .tip{
+	width: auto;
+	height: 22px;
+	position: absolute;
+	left:8px;
+	top:245px;
+	display: none;
+	
+}
+#register .right form .tip p{
+	font-size: 12px;
+	color: #666;
+    line-height: 20px;
+    border: 1px solid #ffbdbf;
+    background: snow;
+    height: 22px;
+    width: auto;
+    text-align: center;
+    padding: 0px 6px 0px 6px;
+}
+#register .right form .tip img{
+	width: 14px;
+	height: 8px;
+	display: block;
+	position: absolute;
+	left:10px;
+	top:23px;
+}*/
+#footer{
+	padding-top: 20px;
+    text-align: center;
+    padding: 30px;
+    line-height: 22px;
+    font-size: 12px;
+    font-family: Verdana,Geneva,sans-serif;
+    color: #ccc;
+}

@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品详情</title>
+		<script src="js/jquery-1.12.3.js"></script>
+		<link type="text/css" href="css/commodity_details.css" rel="stylesheet" />
+		<link type="text/css"  href="css/reset.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="icon/iconfont.css" />
+		<script src="js/move.js"></script>
+		<script src="js/header.js"></script>
+		<script src="js/show.js" ></script>
+		<script src="js/search.js"></script>
+		<script src="js/nav.js"></script>
+		<script src="js/category.js"></script>
+		<script src="js/aside_left_right.js"></script>
+		<script type="text/javascript" src="js/footer.js" ></script>
+		<script type="text/javascript" src="js/content.js" ></script>
+		<script type="text/javascript" src="js/similar.js" ></script>
+		<script src="js/jquery.cookie.js"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<div id="header">
+			<div class="header_main">
+				<a href="#" class="phone">
+					<img src="img/phone_03.jpg" />
+				    <span>手机蜜芽</span>
+				</a>
+				<div class="right">
+					<span>你好，欢迎来到蜜芽！</span>
+					<a href="../login/login.html" class="login">登录</a>
+					<b>|</b>
+					<a href="../register/register.html" class="register">免费注册</a>
+					<a href="#" class="help">帮助中心</a>
+				</div>
+			</div>
+		</div>
+		<!--搜索-->
+		<div id="search">
+			<div class="search_main">
+				<a class="logo" href="#">
+					<img src="img/logo.png" />
+				</a>
+				<div class="right">
+					<div class="right_l">
+						<div class="find">
+							<input type="text" placeholder="尤妮佳"/>
+							<button>搜索</button>
+						</div>
+						<ul class="hot_word">
+							<li><a href="#">牙胶</a></li>
+							<li><a href="#">收纳柜</a></li>
+							<li><a href="#">隔尿垫</a></li>
+							<li><a href="#">加州宝宝</a></li>
+							<li><a href="#">安全座椅</a></li>
+						</ul>
+					</div>
+					<a class="right_r">
+						<div class="cart"><i class="iconfont icon-gouwuchekong"></i></div>
+						<span>购物车<strong class="many"></strong></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--导航-->
+		<div id="nav">
+			<div class="nav_main">
+				<ul>
+					<li><a href="#" class="active forever">首页</a></li>
+					<li><a href="#">纸尿裤</a></li>
+					<li><a href="#">奶粉</a></li>
+					<li class="guarantee">
+						<a href="#">
+							正品保证<i class="iconfont icon-arrowRight-copy"></i>
+						</a>
+						<div class="guarantee_list">
+							<span class="guarantee_menu">正品保证</span>
+							<span class="guarantee_menu">退货政策</span>
+							<span class="guarantee_menu" style="border: none;">帮助中心</span>
+						</div>
+					</li>
+					<li><a href="#">早教音乐</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--导向-->
+		<div id="guide">
+			<div class="guide_main">
+				<a href="../index/index.html">蜜芽首页&nbsp;&nbsp;>&nbsp;&nbsp;</a>
+				<a href="#">抽纸&nbsp;&nbsp;>&nbsp;&nbsp;</a>
+				<a href="#">维达&nbsp;Vinda</a><span>超韧湿水不易破无香抽纸3层130抽16包装 </span>
+			</div>
+		</div>
+		<!--商品详情展现-->
+		<div id="show">
+			<div class="show_main">
+				<div class="commodity_show">
+					<!--<div class="left">
+						<div class="bigpic">
+							<img src="img/big_pic1.jpg" />
+						</div>
+						<div class="smallpic">
+							<img src="img/small_pic1_one.jpg" />
+							<img src="img/small_pic1_two.jpg" />
+							<img src="img/small_pic1_three.jpg" />
+							<img src="img/small_pic1_four.jpg" />
+						</div>
+					</div>
+					<div class="right">
+						<div class="name">
+							<div class="name_left"><a href="#">维达&nbsp;Vinda</a><span>超韧湿水不易破无香抽纸3层130抽16包装 </span></div>
+							<div class="app_img">
+								<a href="#"><img  src="img/wx.jpg"/></a>
+								<a href="#"><img src="img/wb.jpg" /></a>
+							</div>
+						</div>
+						<div class="description">
+							<p>超韧系列 湿水不易破 精选进口原生木浆 不掉纸屑 S码小规格 抽取使用不浪费！居家之选!</p>
+						</div>
+						<div class="price_out">
+							<div class="price_inner">
+								<div class="left">
+									<span class="pintuan">拼团价</span>
+									<span class="new_price">¥38.80</span>
+									<span class="baoyou">拼团包邮</span>
+									<span class="old_price"><del>¥79.00</del></span>
+								</div>
+								<div class="right">
+									已售<b>5458</b>件
+								</div>
+							</div>
+						</div>
+						<div class="select">
+							<div class="canselect">
+								<p>可选</p>
+								<a href="#" class="selected"><img src="img/canselect1.jpg" class="selected_img"/><img src="img/gouxuan_03.jpg" class="gouxuan"/></a>
+							</div>
+							<div class="count">
+								<p>数量</p>
+								<div class="counter">
+									<span class="counter_left">-</span>
+									<b>1</b>
+									<span class="counter_right">+</span>
+								</div>
+							</div>
+							<div class="score">
+								<div class="score_left">
+									<p>评分</p>
+									<div class="score_star">
+										<img src="img/star.png" />
+										<img src="img/star.png" />
+										<img src="img/star.png" />
+										<img src="img/star.png" />
+										<img src="img/star.png" />
+									</div>
+								</div>
+								<div class="score_right">
+									<span>123</span>位蜜粉推荐
+								</div>
+							</div>
+							<div class="buy">
+								<div class="buy_left_middle">
+									<div class="buy_left">
+										<a href="#">
+											<p>¥49.00</p>
+											<span>单独购买</span>
+										</a>
+									</div>
+									<div class="buy_middle">
+										<a href="#">
+											<p>¥38.80</p>
+											<span>2人拼团</span>
+										</a>
+									</div>
+								</div>
+								<div class="buy_right">
+									<a href="#">
+										<img src="img/love.png" />
+										<span>收藏</span>
+									</a>
+								</div>
+							</div>
+							<div  class="coding">
+								<span class="word">编码:</span>
+								<span class="code">2514616</span>
+							</div>
+							<div class="other">
+								<ul>
+									<li><img src="img/dian.png" />&nbsp;&nbsp;&nbsp;满88包邮</li>
+									<li><img src="img/dian.png" />&nbsp;&nbsp;&nbsp;商家</li>
+									<li><img src="img/dian.png" />&nbsp;&nbsp;<i class="iconfont icon-wenhao"></i>&nbsp;&nbsp;本商品支持7天内无理由退货服务</li>
+									<li><img src="img/dian.png" />&nbsp;&nbsp;<i class="iconfont icon-wenhao"></i>&nbsp;&nbsp;假一赔十</li>
+								</ul>
+							</div>
+						</div>
+					</div>-->
+				</div>
+			</div>
+		</div>
+		<div id="cline"></div>
+		<div id="similar">
+			<div class="similar_main">
+				<ul>
+					<li>
+						<a href="#">
+							<img src="img/similar1.jpg" />
+							<p class="one">"维达 Vinda&nbsp;&nbsp;湿水不易破无香抽纸390张*6包装"</p>
+						</a>
+						<p class="two">¥17.00</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/similar2.jpg" />
+							<p class="one">"维达 Vinda&nbsp;&nbsp;超韧抽纸巾120抽16包餐巾纸抽面巾纸"</p>
+						</a>
+						<p class="two">¥35.90</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/similar3.jpg" />
+							<p class="one">"维达 Vinda&nbsp;&nbsp;超韧抽纸巾120抽32包餐巾纸抽面巾纸"</p>
+						</a>
+						<p class="two">¥65.00</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/similar4.jpg" />
+							<p class="one">"维达 Vinda&nbsp;&nbsp;超韧抽纸巾120抽24包餐巾纸抽面巾纸"</p>
+						</a>
+						<p class="two">¥50.90</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/similar5.jpg" />
+							<p class="one">"维达 Vinda&nbsp;&nbsp;超韧抽纸大规格150抽18包整箱餐巾纸擦手纸抽"</p>
+						</a>
+						<p class="two">¥72.90</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/similar6.jpg" />
+							<p class="one">"清风 Breeze&nbsp;&nbsp;新韧纯品抽取式面巾纸3层抽纸卫生纸餐巾纸120抽18包整箱"</p>
+						</a>
+						<p class="two">¥49.00</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="content">
+			<div class="content_main">
+				<div class="content_nav">
+					<ul>
+						<li><a href="#"  class="current">商品详情</a></li>
+						<li><a href="#">蜜芽圈(109)</a></li>
+						<li><a href="#">蜜芽优势</a></li>
+						<li><a href="#">问题咨询</a></li>
+					</ul>
+				</div>
+				<div class="content_details">
+					<ul>
+						<li><b>商品名称:</b><span>维达 Vinda&nbsp;超韧湿水不易破无香抽纸3层130抽16包装</span></li>
+						<li><b>品牌:</b><span>维达 &nbsp;Vinda</span></li>
+						<li><b>分类:</b><span>抽纸</span></li>
+						<li><b>商品条码:</b></li>
+						<li><b>层数:</b><span>3层</li>
+						<li><b>原料成分:</b><span>木浆</span></li>
+						<li><b>产地:</b><span>中国</span></li>
+						<li><b>尺寸:</b><span>133m*195mm</span></li>
+						<li><b>是否有香味:</b><span>无</span></li>
+						<li><b>是否印花:</b><span>无印花</span></li>
+						<li><b>面巾纸种类:</b><span>抽取式面巾纸</span></li>
+						<li><b>抽数:</b><span>130抽</span></li>
+					</ul>
+					<div class="more">
+						<span href="#" id="show_more">收起</span>
+					</div>
+					<div class="picture">
+						<div class="pic_top">
+							<img src="img/spxq.gif" />
+						</div>
+						<img src="img/1.jpg" />
+						<img src="img/2.jpg" />
+						<img src="img/3.jpg" />
+						<img src="img/4.jpg" />
+						<img src="img/5.jpg" />
+						<img src="img/6.jpg" />
+						<img src="img/7.jpg" />
+						<img src="img/8.jpg" />
+						<img src="img/9.jpg" />
+						<img src="img/10.jpg" />
+						<img src="img/11.jpg" />
+						<img src="img/12.jpg" />
+						<img src="img/13.jpg" />
+					</div>
+					<div class="instruction">
+						<img src="img/price_shuoming.jpg" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--底部-->
+		<div id="footer">
+			<div class="footer_main">
+				<div class="service">
+					<a href="#" style="margin-left: 50px;">
+						<i class="iconfont icon-pinpaixinlai"></i>
+						<b>可信赖</b>
+						<p>进口母婴特卖</p>
+					</a>
+					<a href="#">
+						<i class="iconfont icon-zhengpinbaozheng"></i>
+						<b>无忧</b>
+						<p>正品保证</p>
+					</a>
+					<a href="#">
+						<i class="iconfont icon-7tianwuliyoutuihuanhuo"></i>
+						<b>7天</b>
+						<p>无理由退货</p>
+					</a>
+					<a href="#">
+						<i class="iconfont icon-cangku"></i>
+						<b>恒温仓</b>
+						<p>完善的货物仓储</p>
+					</a>
+					<a href="#">
+						<i class="iconfont icon-shandianfahuo"></i>
+						<b>24小时</b>
+						<p>快速发货</p>
+					</a>
+					<a href="#">
+						<i class="iconfont icon-dianzan"></i>
+						<b>100万</b>
+						<p>妈妈口碑信赖</p>
+					</a>
+				</div>
+				<div class="help">
+					<div class="left">
+						<ul class="like">
+							<li class="fist">使用帮助</li>
+							<li><a href="#">新手指南</a></li>
+							<li><a href="#">蜜粉值体系</a></li>
+							<li><a href="#">蜜豆体系</a></li>
+							<li><a href="#">正品承诺</a></li>
+						</ul>
+						<ul class="like">
+							<li class="fist">支付方式</li>
+							<li><a href="#">支付方式</a></li>
+							<li><a href="#">支付流程</a></li>
+							<li><a href="#">跨境进口税</a></li>
+						</ul>
+						<ul class="like">
+							<li class="fist">配送方式</li>
+							<li><a href="#">包邮政策</a></li>
+							<li><a href="#">发货时间</a></li>
+							<li><a href="#">配送区域</a></li>
+							<li><a href="#">验货签收</a></li>
+						</ul>
+						<ul class="like">
+							<li class="fist">售后服务</li>
+							<li><a href="#">退货政策</a></li>
+							<li><a href="#">退货流程</a></li>
+							<li><a href="#">退款方式</a></li>
+						</ul>
+						<ul class="last">
+							<li class="fist">联系方式</li>
+							<li>总裁邮箱 &nbsp;&nbsp;ceo@mia.com</li>
+							<li>商务合作&nbsp;&nbsp; bd@mia.com</li>
+							<li>媒体合作&nbsp;&nbsp; pr@mia.com</li>
+							<li>招商中心 &nbsp;&nbsp;zhaoshang@mia.com</li>
+							<li>企业采购 &nbsp;&nbsp;qiye@mia.com</li>
+						</ul>
+					</div>
+					<div class="right">
+						<h4>关注蜜芽</h4>
+						<div class="qr_code">
+							<img src="img/qr_code.jpg" />
+						</div>
+						<div class="wx_wb">
+							<a href="#"><img src="img/weibo.gif"/></a>
+							<img src="img/weixin.gif" class="qr_weixin"/>
+							<img src="img/weibo_weixin.jpg" class="db_img"/>
+						</div>
+					</div>
+				</div>
+				<div class="connect">
+					<p class="top">
+						<a href="#">关于蜜芽</a>
+						<a href="#">加入蜜芽</a>
+						<a href="#">商务合作</a>
+						<a href="#">帮助中心</a>
+						<a href="#">联系我们</a>
+						<a href="#">友情链接</a>
+						<a href="#">触屏版</a>
+						<a href="#">媒体报道</a>
+					</p>
+					<div class="word">
+						<div>
+                                                                      京公网安备：11010502027270&nbsp;|&nbsp;营业执照：91110105582599307U&nbsp;|&nbsp;食品经营许可证：SP1101051410296669&nbsp;|&nbsp;出版物经营许可证：新出发京零字第朝160088号|京ICP证140430号 
+						</div>
+						<div>
+							 京ICP备14006215号&nbsp;|&nbsp;员工舞弊举报：jiancha@mia.com&nbsp;电话：010-56733467
+						</div>
+						<div>
+							通过本网站直接或者间接地推销商品或者服务的商业宣传活动均属"广告"
+						</div>
+						<div>
+            				Copyright&nbsp;©&nbsp;2017 北京花旺在线商贸有限公司 Mia.com&nbsp;保留一切权利。
+						</div>
+					</div>
+					<div class="footer_logo">
+						<a href="#"><img src="img/footer_logo1.png"/></a>
+						<a href="#"><img src="img/footer_logo2.png"/></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--商品分类-->
+		<div id="category">
+			<div class="one">全部商品分类<i class="iconfont icon-arrowRight-copy"></i></div>
+			<ul class="total">
+				<li class="two">
+					<i class="iconfont icon-jiantou"></i>
+					<p class="title">奶粉/纸尿裤</p>
+					<ul class="two1">
+						<li><a href="#">婴儿奶粉</a></li>
+						<li><a href="#">羊奶粉</a></li>
+						<li><a href="#">特配奶粉</a></li>
+					</ul>
+					<ul class="two2">
+						<li><a href="#">拉拉裤</a></li>
+						<li><a href="#">宝宝湿巾</a></li>
+						<li><a href="#">德国爱他美</a></li>
+					</ul>
+					<!--商品分类子菜单-->
+					<div class="second_menu">
+						<div class="line"></div>
+						<ul class="second_menu_word">
+							<li class="milk_powder">
+								<h3>奶粉专区</h3>
+								<p class="second_p">
+									<a href="#" class="hot">婴儿奶粉</a>
+									<a href="#">成长奶粉</a>
+									<a href="#"class="hot">羊奶粉</a>
+									<a href="#" class="hot">特配奶粉</a>
+									<a href="#">妈妈奶粉</a>
+									<a href="#">成人奶粉</a>
+								</p>
+							</li>
+							<li class="care">
+								<h3>屁屁护理</h3>
+								<p class="second_p">
+									<a href="#">纸尿裤</a>
+									<a href="#" class="hot">拉拉裤</a>
+									<a href="#">隔尿垫/布尿裤</a>
+									<a href="#" class="hot">宝宝湿巾</a>
+								</p>
+							</li>
+							<li class="diaper_bigname">
+								<h3>全球纸尿裤大牌</h3>
+								<p class="second_p">
+									<a href="#" class="hot">尤妮佳</a>
+									<a href="#" class="hot">花王</a>
+									<a href="#" class="hot">GOON大王天使</a>
+									<a href="#">GOON大王维E</a>
+									<a href="#" class="hot">Pampers帮宝适</a>
+									<a href="#">Pampers&nbsp;care帮宝适棉柔</a>
+									<a href="#">Huggies&nbsp;Gold好奇金装</a>
+									<a href="#">Huggies&nbsp;platinum好奇铂金装</a>
+									<a href="#" class="hot">Mamypoko&nbsp;妈咪宝贝</a>
+									<a href="#">Libero丽贝乐</a>
+									<a href="#">Bella&nbsp;Baby&nbsp;Happy贝拉宝贝</a>
+									<a href="#">BioFities爱婴舒坦</a>
+									<a href="#">BAMBO班博</a>
+								</p>
+							</li>
+							<li class="milk_bigname">
+								<h3>全球奶粉大牌</h3>
+								<p class="second_p">
+									<a href="#" class="hot">德国爱他美</a>
+									<a href="#" class="hot">德国Hipp</a>
+									<a href="#">德国Topfer</a>
+									<a href="#" class="hot">荷兰Nutrilon</a>
+									<a href="#" class="hot">荷兰Herobaby</a>
+									<a href="#">英国CowGate</a>
+									<a href="#">澳洲Aptamil</a>
+									<a href="#">德国holle</a>
+									<a href="#">英国Aptamil</a>
+									<a href="#">授权行货惠氏启赋</a>
+									<a href="#">港版美赞臣</a>
+									<a href="#">授权行货爱他美</a>
+									<a href="#">授权行货诺优能</a>
+									<a href="#">授权行货&nbsp;喜宝</a>
+									<a href="#">美国MeadJohnson</a>
+								</p>
+							</li>
+						</ul>
+						<ul class="second_menu_brands">
+							<h3>热卖大牌</h3>
+							<li style="border-bottom: none;border-right: none;"><a href="#"><img src="img/category_brands1.jpg"/></a></li>
+							<li style="border-bottom: none;border-right: none;"><a href="#"><img src="img/category_brands2.jpg"/></a></li>
+							<li style="border-bottom: none;"><a href="#"><img src="img/category_brands3.jpg"/></a></li>
+							<li style="border-bottom: none;border-right: none;"><a href="#"><img src="img/category_brands4.jpg"/></a></li>
+							<li style="border-bottom: none;border-right: none;"><a href="#"><img src="img/category_brands5.jpg"/></a></li>
+							<li style="border-bottom: none;"><a href="#"><img src="img/category_brands6.jpg"/></a></li>
+							<li style="border-right: none;"><a href="#"><img src="img/category_brands7.jpg"/></a></li>
+							<li style="border-right: none;"><a href="#"><img src="img/category_brands8.jpg"/></a></li>
+							<li><a href="#"><img src="img/category_brands9.jpg"/></a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="three">
+					<i class="iconfont icon-jiantou"></i>
+					<p class="title">辅食/喂养/洗护</p>
+					<ul class="three1">
+						<li><a href="#">米粉</a></li>
+						<li><a href="#">果泥/肉泥</a></li>
+						<li><a href="#">溶豆/泡芙</a></li>
+					</ul>
+					<ul class="three2">
+						<li><a href="#">磨牙饼干</a></li>
+						<li><a href="#">鱼肝油/DHA</a></li>
+						<li><a href="#">钙铁锌</a></li>
+					</ul>
+					<!--二级菜单-->
+					<div class="second_menu">
+						<div class="line"></div>
+						<ul class="second_menu_word">
+							<li class="milk_powder">
+								<h3>奶粉专区</h3>
+								<p class="second_p">
+									<a href="#" class="hot">婴儿奶粉</a>
+									<a href="#">成长奶粉</a>
+									<a href="#"class="hot">羊奶粉</a>
+									<a href="#" class="hot">特配奶粉</a>
+									<a href="#">妈妈奶粉</a>
+									<a href="#">成人奶粉</a>
+								</p>
+							</li>
+							<li class="care">
+								<h3>屁屁护理</h3>
+								<p class="second_p">
+									<a href="#">纸尿裤</a>
+									<a href="#" class="hot">拉拉裤</a>
+									<a href="#">隔尿垫/布尿裤</a>
+									<a href="#" class="hot">宝宝湿巾</a>
+								</p>
+							</li>
+							<li class="diaper_bigname">
+								<h3>全球纸尿裤大牌</h3>
+								<p class="second_p">
+									<a href="#" class="hot">尤妮佳</a>
+									<a href="#" class="hot">花王</a>
+									<a href="#" class="hot">GOON大王天使</a>
+									<a href="#">GOON大王维E</a>
+									<a href="#" class="hot">Pampers帮宝适</a>
+									<a href="#">Pampers&nbsp;care帮宝适棉柔</a>
+									<a href="#">Huggies&nbsp;Gold好奇金装</a>
+									<a href="#">Huggies&nbsp;platinum好奇铂金装</a>
+									<a href="#" class="hot">Mamypoko&nbsp;妈咪宝贝</a>
+									<a href="#">Libero丽贝乐</a>
+									<a href="#">Bella&nbsp;Baby&nbsp;Happy贝拉宝贝</a>
+									<a href="#">BioFities爱婴舒坦</a>
+									<a href="#">BAMBO班博</a>
+								</p>
+							</li>
+							<li class="milk_bigname">
+								<h3>全球奶粉大牌</h3>
+								<p class="second_p">
+									<a href="#" class="hot">德国爱他美</a>
+									<a href="#" class="hot">德国Hipp</a>
+									<a href="#">德国Topfer</a>
+									<a href="#" class="hot">荷兰Nutrilon</a>
+									<a href="#" class="hot">荷兰Herobaby</a>
+									<a href="#">英国CowGate</a>
+									<a href="#">澳洲Aptamil</a>
+									<a href="#">德国holle</a>
+									<a href="#">英国Aptamil</a>
+									<a href="#">授权行货惠氏启赋</a>
+									<a href="#">港版美赞臣</a>
+									<a href="#">授权行货爱他美</a>
+									<a href="#">授权行货诺优能</a>
+									<a href="#">授权行货&nbsp;喜宝</a>
+									<a href="#">美国MeadJohnson</a>
+								</p>
+							</li>
+						</ul>
+						<ul class="second_menu_brands">
+							<h3>热卖大牌</h3>
+							<li style="border-bottom: none;border-right: none;"><a href="#"><img src="img/category_brands1.jpg"/></a></li>
+							<li style="border-bottom: none;border-right: none;"><a href="#"><img src="img/category_brands2.jpg"/></a></li>
+							<li style="border-bottom: none;"><a href="#"><img src="img/category_brands3.jpg"/></a></li>
+							<li style="border-bottom: none;border-right: none;"><a href="#"><img src="img/category_brands4.jpg"/></a></li>
+							<li style="border-bottom: none;border-right: none;"><a href="#"><img src="img/category_brands5.jpg"/></a></li>
+							<li style="border-bottom: none;"><a href="#"><img src="img/category_brands6.jpg"/></a></li>
+							<li style="border-right: none;"><a href="#"><img src="img/category_brands7.jpg"/></a></li>
+							<li style="border-right: none;"><a href="#"><img src="img/category_brands8.jpg"/></a></li>
+							<li><a href="#"><img src="img/category_brands9.jpg"/></a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="four">
+					<i class="iconfont icon-jiantou"></i>
+					<p class="title">孕妈用品</p>
+					<ul class="four1">
+						<li><a href="#">孕妇装/孕妇裙</a></li>
+						<li><a href="#">待产/月子用品</a></li>
+					</ul>
+					<ul class="four2">
+						<li><a href="#">防辐射服</a></li>
+						<li><a href="#">孕期营养</a></li>
+					</ul>
+					<!--二级菜单-->
+					<div class="second_menu">
+						<div class="line"></div>
+						<ul class="second_menu_word">
+							<li class="milk_powder">
+								<h3>奶粉专区</h3>
+								<p class="second_p">
+									<a href="#" class="hot">婴儿奶粉</a>
+									<a href="#">成长奶粉</a>
+									<a href="#"class="hot">羊奶粉</a>
+									<a href="#" class="hot">特配奶粉</a>
+									<a href="#">妈妈奶粉</a>
+									<a href="#">成人奶粉</a>
+								</p>
+							</li>
+							<li class="care">
+								<h3>屁屁护理</h3>
+								<p class="second_p">
+									<a href="#">纸尿裤</a>
+									<a href="#" class="hot">拉拉裤</a>
+									<a href="#">隔尿垫/布尿裤</a>
+									<a href="#" class="hot">宝宝湿巾</a>
+								</p>
+							</li>
+							<li class="diaper_bigname">
+								<h3>全球纸尿裤大牌</h3>
+								<p class="second_p">
+									<a href="#" class="hot">尤妮佳</a>
+									<a href="#" class="hot">花王</a>
+									<a href="#" class="hot">GOON大王天使</a>
+									<a href="#">GOON大王维E</a>
+									<a href="#" class="hot">Pampers帮宝适</a>
+									<a href="#">Pampers&nbsp;care帮宝适棉柔</a>
+									<a href="#">Huggies&nbsp;Gold好奇金装</a>
+									<a href="#">Huggies&nbsp;platinum好奇铂金装</a>
+									<a href="#" class="hot">Mamypoko&nbsp;妈咪宝贝</a>
+									<a href="#">Libero丽贝乐</a>
+									<a href="#">Bella&nbsp;Baby&nbsp;Happy贝拉宝贝</a>
+									<a href="#">BioFities爱婴舒坦</a>
+									<a href="#">BAMBO班博</a>
+								</p>
+							</li>
+							<li class="milk_bigname">
+								<h3>全球奶粉大牌</h3>
+								<p class="second_p">
+									<a href="#" class="hot">德国爱他美</a>
+									<a href="#" class="hot">德国Hipp</a>
+									<a href="#">德国Topfer</a>
+									<a href="#" class="hot">荷兰Nutrilon</a>
+									<a href="#" class="hot">荷兰Herobaby</a>
+									<a href="#">英国CowGate</a>
+									<a href="#">澳洲Aptamil</a>
+									<a href="#">德国holle</a>
+									<a href="#">英国Aptamil</a>
+									<a href="#">授权行货惠氏启赋</a>
+									<a href="#">港版美赞臣</a>
+									<a href="#">授权行货爱他美</a>
+									<a href="#">授权行货诺优能</a>
+									<a href="#">授权行货&nbsp;喜宝</a>
+									<a href="#">美国MeadJohnson</a>
+								</p>
+							</li>
+						</ul>
+						<ul class="second_menu_brands">
+							<h3>热卖大牌</h3>
+							<li style="border-bottom: none;border-right: none;"><a href="#"><img src="img/category_brands1.jpg"/></a></li>
+							<li style="border-bottom: none;border-right: none;"><a href="#"><img src="img/category_brands2.jpg"/></a></li>
+							<li style="border-bottom: none;"><a href="#"><img src="img/category_brands3.jpg"/></a></li>
+							<li style="border-bottom: none;border-right: none;"><a href="#"><img src="img/category_brands4.jpg"/></a></li>
+							<li style="border-bottom: none;border-right: none;"><a href="#"><img src="img/category_brands5.jpg"/></a></li>
+							<li style="border-bottom: none;"><a href="#"><img src="img/category_brands6.jpg"/></a></li>
+							<li style="border-right: none;"><a href="#"><img src="img/category_brands7.jpg"/></a></li>
+							<li style="border-right: none;"><a href="#"><img src="img/category_brands8.jpg"/></a></li>
+							<li><a href="#"><img src="img/category_brands9.jpg"/></a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="five">
+					<i class="iconfont icon-jiantou"></i>
+					<p class="title">童装/童鞋/寝居</p>
+					<ul class="five1">
+						<li><a href="#">新生儿礼盒</a></li>
+						<li><a href="#">连身衣/爬服</a></li>
+					</ul>
+					<ul class="five2">
+						<li><a href="#">T恤/POLO衫</a></li>
+						<li><a href="#">亲子装</a></li>
+						<li><a href="#">太阳镜</a></li>
+					</ul>
+					<!--二级菜单-->
+					<div class="second_menu">
+						<div class="line"></div>
+						<ul class="second_menu_word">
+							<li class="milk_powder">
+								<h3>奶粉专区</h3>
+								<p class="second_p">
+									<a href="#" class="hot">婴儿奶粉</a>
+									<a href="#">成长奶粉</a>
+									<a href="#"class="hot">羊奶粉</a>
+									<a href="#" class="hot">特配奶粉</a>
+									<a href="#">妈妈奶粉</a>
+									<a href="#">成人奶粉</a>
+								</p>
+							</li>
+							<li class="care">
+								<h3>屁屁护理</h3>
+								<p class="second_p">
+									<a href="#">纸尿裤</a>
+									<a href="#" class="hot">拉拉裤</a>
+									<a href="#">隔尿垫/布尿裤</a>
+									<a href="#" class="hot">宝宝湿巾</a>
+								</p>
+							</li>
+							<li class="diaper_bigname">
+								<h3>全球纸尿裤大牌</h3>
+								<p class="second_p">
+									<a href="#" class="hot">尤妮佳</a>
+									<a href="#" class="hot">花王</a>
+									<a href="#" class="hot">GOON大王天使</a>
+									<a href="#">GOON大王维E</a>
+									<a href="#" class="hot">Pampers帮宝适</a>
+									<a href="#">Pampers&nbsp;care帮宝适棉柔</a>
+									<a href="#">Huggies&nbsp;Gold好奇金装</a>
+									<a href="#">Huggies&nbsp;platinum好奇铂金装</a>
+									<a href="#" class="hot">Mamypoko&nbsp;妈咪宝贝</a>
+									<a href="#">Libero丽贝乐</a>
+									<a href="#">Bella&nbsp;Baby&nbsp;Happy贝拉宝贝</a>
+									<a href="#">BioFities爱婴舒坦</a>
+									<a href="#">BAMBO班博</a>
+								</p>
+							</li>
+							<li class="milk_bigname">
+								<h3>全球奶粉大牌</h3>
+								<p class="second_p">
+									<a href="#" class="hot">德国爱他美</a>
+									<a href="#" class="hot">德国Hipp</a>
+									<a href="#">德国Topfer</a>
+									<a href="#" class="hot">荷兰Nutrilon</a>
+									<a href="#" class="hot">荷兰Herobaby</a>
+									<a href="#">英国CowGate</a>
+									<a href="#">澳洲Aptamil</a>
+									<a href="#">德国holle</a>
+									<a href="#">英国Aptamil</a>
+									<a href="#">授权行货惠氏启赋</a>
+									<a href="#">港版美赞臣</a>
+									<a href="#">授权行货爱他美</a>
+									<a href="#">授权行货诺优能</a>
+									<a href="#">授权行货&nbsp;喜宝</a>
+									<a href="#">美国MeadJohnson</a>
+								</p>
+							</li>
+						</ul>
+						<ul class="second_menu_brands">
+							<h3>热卖大牌</h3>
+							<li style="border-bottom: none;border-right: none;"><a href="#"><img src="img/category_brands1.jpg"/></a></li>
+							<li style="border-bottom: none;border-right: none;"><a href="#"><img src="img/category_brands2.jpg"/></a></li>
+							<li style="border-bottom: none;"><a href="#"><img src="img/category_brands3.jpg"/></a></li>
+							<li style="border-bottom: none;border-right: none;"><a href="#"><img src="img/category_brands4.jpg"/></a></li>
+							<li style="border-bottom: none;border-right: none;"><a href="#"><img src="img/category_brands5.jpg"/></a></li>
+							<li style="border-bottom: none;"><a href="#"><img src="img/category_brands6.jpg"/></a></li>
+							<li style="border-right: none;"><a href="#"><img src="img/category_brands7.jpg"/></a></li>
+							<li style="border-right: none;"><a href="#"><img src="img/category_brands8.jpg"/></a></li>
+							<li><a href="#"><img src="img/category_brands9.jpg"/></a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="six">
+					<i class="iconfont icon-jiantou"></i>
+					<p class="title">玩具/书籍/出行</p>
+					<ul class="six1">
+						<li><a href="#">益智</a></li>
+						<li><a href="#">毛绒/安抚</a></li>
+						<li><a href="#">牙胶/咬咬胶</a></li>
+					</ul>
+					<ul class="six2">
+						<li><a href="#">戏水/游泳装备</a></li>
+						<li><a href="#">中文绘本</a></li>
+					</ul>
+					<!--二级菜单-->
+					<div class="second_menu">
+						<div class="line"></div>
+						<ul class="second_menu_word">
+							<li class="milk_powder">
+								<h3>奶粉专区</h3>
+								<p class="second_p">
+									<a href="#" class="hot">婴儿奶粉</a>
+									<a href="#">成长奶粉</a>
+									<a href="#"class="hot">羊奶粉</a>
+									<a href="#" class="hot">特配奶粉</a>
+									<a href="#">妈妈奶粉</a>
+									<a href="#">成人奶粉</a>
+								</p>
+							</li>
+							<li class="care">
+								<h3>屁屁护理</h3>
+								<p class="second_p">
+									<a href="#">纸尿裤</a>
+									<a href="#" class="hot">拉拉裤</a>
+									<a href="#">隔尿垫/布尿裤</a>
+									<a href="#" class="hot">宝宝湿巾</a>
+								</p>
+							</li>
+							<li class="diaper_bigname">
+								<h3>全球纸尿裤大牌</h3>
+								<p class="second_p">
+									<a href="#" class="hot">尤妮佳</a>
+									<a href="#" class="hot">花王</a>
+									<a href="#" class="hot">GOON大王天使</a>
+									<a href="#">GOON大王维E</a>
+									<a href="#" class="hot">Pampers帮宝适</a>
+									<a href="#">Pampers&nbsp;care帮宝适棉柔</a>
+									<a href="#">Huggies&nbsp;Gold好奇金装</a>
+									<a href="#">Huggies&nbsp;platinum好奇铂金装</a>
+									<a href="#" class="hot">Mamypoko&nbsp;妈咪宝贝</a>
+									<a href="#">Libero丽贝乐</a>
+									<a href="#">Bella&nbsp;Baby&nbsp;Happy贝拉宝贝</a>
+									<a href="#">BioFities爱婴舒坦</a>
+									<a href="#">BAMBO班博</a>
+								</p>
+							</li>
+							<li class="milk_bigname">
+								<h3>全球奶粉大牌</h3>
+								<p class="second_p">
+									<a href="#" class="hot">德国爱他美</a>
+									<a href="#" class="hot">德国Hipp</a>
+									<a href="#">德国Topfer</a>
+									<a href="#" class="hot">荷兰Nutrilon</a>
+									<a href="#" class="hot">荷兰Herobaby</a>
+									<a href="#">英国CowGate</a>
+									<a href="#">澳洲Aptamil</a>
+									<a href="#">德国holle</a>
+									<a href="#">英国Aptamil</a>
+									<a href="#">授权行货惠氏启赋</a>
+									<a href="#">港版美赞臣</a>
+									<a href="#">授权行货爱他美</a>
+									<a href="#">授权行货诺优能</a>
+									<a href="#">授权行货&nbsp;喜宝</a>
+									<a href="#">美国MeadJohnson</a>
+								</p>
+							</li>
+						</ul>
+						<ul class="second_menu_brands">
+							<h3>热卖大牌</h3>
+							<li style="border-bottom: none;border-right: none;"><a href="#"><img src="img/category_brands1.jpg"/></a></li>
+							<li style="border-bottom: none;border-right: none;"><a href="#"><img src="img/category_brands2.jpg"/></a></li>
+							<li style="border-bottom: none;"><a href="#"><img src="img/category_brands3.jpg"/></a></li>
+							<li style="border-bottom: none;border-right: none;"><a href="#"><img src="img/category_brands4.jpg"/></a></li>
+							<li style="border-bottom: none;border-right: none;"><a href="#"><img src="img/category_brands5.jpg"/></a></li>
+							<li style="border-bottom: none;"><a href="#"><img src="img/category_brands6.jpg"/></a></li>
+							<li style="border-right: none;"><a href="#"><img src="img/category_brands7.jpg"/></a></li>
+							<li style="border-right: none;"><a href="#"><img src="img/category_brands8.jpg"/></a></li>
+							<li><a href="#"><img src="img/category_brands9.jpg"/></a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="seven">
+					<i class="iconfont icon-jiantou"></i>
+					<p class="title">美妆/个护/轻奢</p>
+					<ul class="seven1">
+						<li><a href="#">防晒/隔离</a></li>
+						<li><a href="#">化妆水/爽肤水</a></li>
+					</ul>
+					<ul class="seven2">
+						<li><a href="#">面膜</a></li>
+						<li><a href="#">套装礼盒</a></li>
+						<li><a href="#">美体塑身</a></li>
+					</ul>
+					<!--二级菜单-->
+					<div class="second_menu">
+						<div class="line"></div>
+						<ul class="second_menu_word">
+							<li class="milk_powder">
+								<h3>奶粉专区</h3>
+								<p class="second_p">
+									<a href="#" class="hot">婴儿奶粉</a>
+									<a href="#">成长奶粉</a>
+									<a href="#"class="hot">羊奶粉</a>
+									<a href="#" class="hot">特配奶粉</a>
+									<a href="#">妈妈奶粉</a>
+									<a href="#">成人奶粉</a>
+								</p>
+							</li>
+							<li class="care">
+								<h3>屁屁护理</h3>
+								<p class="second_p">
+									<a href="#">纸尿裤</a>
+									<a href="#" class="hot">拉拉裤</a>
+									<a href="#">隔尿垫/布尿裤</a>
+									<a href="#" class="hot">宝宝湿巾</a>
+								</p>
+							</li>
+							<li class="diaper_bigname">
+								<h3>全球纸尿裤大牌</h3>
+								<p class="second_p">
+									<a href="#" class="hot">尤妮佳</a>
+									<a href="#" class="hot">花王</a>
+									<a href="#" class="hot">GOON大王天使</a>
+									<a href="#">GOON大王维E</a>
+									<a href="#" class="hot">Pampers帮宝适</a>
+									<a href="#">Pampers&nbsp;care帮宝适棉柔</a>
+									<a href="#">Huggies&nbsp;Gold好奇金装</a>
+									<a href="#">Huggies&nbsp;platinum好奇铂金装</a>
+									<a href="#" class="hot">Mamypoko&nbsp;妈咪宝贝</a>
+									<a href="#">Libero丽贝乐</a>
+									<a href="#">Bella&nbsp;Baby&nbsp;Happy贝拉宝贝</a>
+									<a href="#">BioFities爱婴舒坦</a>
+									<a href="#">BAMBO班博</a>
+								</p>
+							</li>
+							<li class="milk_bigname">
+								<h3>全球奶粉大牌</h3>
+								<p class="second_p">
+									<a href="#" class="hot">德国爱他美</a>
+									<a href="#" class="hot">德国Hipp</a>
+									<a href="#">德国Topfer</a>
+									<a href="#" class="hot">荷兰Nutrilon</a>
+									<a href="#" class="hot">荷兰Herobaby</a>
+									<a href="#">英国CowGate</a>
+									<a href="#">澳洲Aptamil</a>
+									<a href="#">德国holle</a>
+									<a href="#">英国Aptamil</a>
+									<a href="#">授权行货惠氏启赋</a>
+									<a href="#">港版美赞臣</a>
+									<a href="#">授权行货爱他美</a>
+									<a href="#">授权行货诺优能</a>
+									<a href="#">授权行货&nbsp;喜宝</a>
+									<a href="#">美国MeadJohnson</a>
+								</p>
+							</li>
+						</ul>
+						<ul class="second_menu_brands">
+							<h3>热卖大牌</h3>
+							<li style="border-bottom: none;border-right: none;"><a href="#"><img src="img/category_brands1.jpg"/></a></li>
+							<li style="border-bottom: none;border-right: none;"><a href="#"><img src="img/category_brands2.jpg"/></a></li>
+							<li style="border-bottom: none;"><a href="#"><img src="img/category_brands3.jpg"/></a></li>
+							<li style="border-bottom: none;border-right: none;"><a href="#"><img src="img/category_brands4.jpg"/></a></li>
+							<li style="border-bottom: none;border-right: none;"><a href="#"><img src="img/category_brands5.jpg"/></a></li>
+							<li style="border-bottom: none;"><a href="#"><img src="img/category_brands6.jpg"/></a></li>
+							<li style="border-right: none;"><a href="#"><img src="img/category_brands7.jpg"/></a></li>
+							<li style="border-right: none;"><a href="#"><img src="img/category_brands8.jpg"/></a></li>
+							<li><a href="#"><img src="img/category_brands9.jpg"/></a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="eight">
+					<i class="iconfont icon-jiantou"></i>
+					<p class="title">美食/保健</p>
+					<ul class="eight1">
+						<li><a href="#">干果/果干</a></li>
+						<li><a href="#">休闲零食</a></li>
+						<li><a href="#">地方特产</a></li>
+					</ul>
+					<ul class="eight2">
+						<li><a href="#">胶原蛋白</a></li>
+						<li><a href="#">酵素</a></li>
+						<li><a href="#">蔓越莓/葡萄籽</a></li>
+					</ul>
+					<!--二级菜单-->
+					<div class="second_menu">
+						<div class="line"></div>
+						<ul class="second_menu_word">
+							<li class="milk_powder">
+								<h3>奶粉专区</h3>
+								<p class="second_p">
+									<a href="#" class="hot">婴儿奶粉</a>
+									<a href="#">成长奶粉</a>
+									<a href="#"class="hot">羊奶粉</a>
+									<a href="#" class="hot">特配奶粉</a>
+									<a href="#">妈妈奶粉</a>
+									<a href="#">成人奶粉</a>
+								</p>
+							</li>
+							<li class="care">
+								<h3>屁屁护理</h3>
+								<p class="second_p">
+									<a href="#">纸尿裤</a>
+									<a href="#" class="hot">拉拉裤</a>
+									<a href="#">隔尿垫/布尿裤</a>
+									<a href="#" class="hot">宝宝湿巾</a>
+								</p>
+							</li>
+							<li class="diaper_bigname">
+								<h3>全球纸尿裤大牌</h3>
+								<p class="second_p">
+									<a href="#" class="hot">尤妮佳</a>
+									<a href="#" class="hot">花王</a>
+									<a href="#" class="hot">GOON大王天使</a>
+									<a href="#">GOON大王维E</a>
+									<a href="#" class="hot">Pampers帮宝适</a>
+									<a href="#">Pampers&nbsp;care帮宝适棉柔</a>
+									<a href="#">Huggies&nbsp;Gold好奇金装</a>
+									<a href="#">Huggies&nbsp;platinum好奇铂金装</a>
+									<a href="#" class="hot">Mamypoko&nbsp;妈咪宝贝</a>
+									<a href="#">Libero丽贝乐</a>
+									<a href="#">Bella&nbsp;Baby&nbsp;Happy贝拉宝贝</a>
+									<a href="#">BioFities爱婴舒坦</a>
+									<a href="#">BAMBO班博</a>
+								</p>
+							</li>
+							<li class="milk_bigname">
+								<h3>全球奶粉大牌</h3>
+								<p class="second_p">
+									<a href="#" class="hot">德国爱他美</a>
+									<a href="#" class="hot">德国Hipp</a>
+									<a href="#">德国Topfer</a>
+									<a href="#" class="hot">荷兰Nutrilon</a>
+									<a href="#" class="hot">荷兰Herobaby</a>
+									<a href="#">英国CowGate</a>
+									<a href="#">澳洲Aptamil</a>
+									<a href="#">德国holle</a>
+									<a href="#">英国Aptamil</a>
+									<a href="#">授权行货惠氏启赋</a>
+									<a href="#">港版美赞臣</a>
+									<a href="#">授权行货爱他美</a>
+									<a href="#">授权行货诺优能</a>
+									<a href="#">授权行货&nbsp;喜宝</a>
+									<a href="#">美国MeadJohnson</a>
+								</p>
+							</li>
+						</ul>
+						<ul class="second_menu_brands">
+							<h3>热卖大牌</h3>
+							<li style="border-bottom: none;border-right: none;"><a href="#"><img src="img/category_brands1.jpg"/></a></li>
+							<li style="border-bottom: none;border-right: none;"><a href="#"><img src="img/category_brands2.jpg"/></a></li>
+							<li style="border-bottom: none;"><a href="#"><img src="img/category_brands3.jpg"/></a></li>
+							<li style="border-bottom: none;border-right: none;"><a href="#"><img src="img/category_brands4.jpg"/></a></li>
+							<li style="border-bottom: none;border-right: none;"><a href="#"><img src="img/category_brands5.jpg"/></a></li>
+							<li style="border-bottom: none;"><a href="#"><img src="img/category_brands6.jpg"/></a></li>
+							<li style="border-right: none;"><a href="#"><img src="img/category_brands7.jpg"/></a></li>
+							<li style="border-right: none;"><a href="#"><img src="img/category_brands8.jpg"/></a></li>
+							<li><a href="#"><img src="img/category_brands9.jpg"/></a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="nine">
+					<i class="iconfont icon-jiantou"></i>
+					<p class="title">家居/清洁</p>
+					<ul class="nine1">
+						<li><a href="#">奶瓶清洁</a></li>
+						<li><a href="#">消毒液/柔顺剂</a></li>
+					</ul>
+					<ul class="nine2">
+						<li><a href="#">宝宝湿巾</a></li>
+						<li><a href="#">床上用品</a></li>
+						<li><a href="#">家居纸品</a></li>
+					</ul>
+					<!--二级菜单-->
+					<div class="second_menu">
+						<div class="line"></div>
+						<ul class="second_menu_word">
+							<li class="milk_powder">
+								<h3>奶粉专区</h3>
+								<p class="second_p">
+									<a href="#" class="hot">婴儿奶粉</a>
+									<a href="#">成长奶粉</a>
+									<a href="#"class="hot">羊奶粉</a>
+									<a href="#" class="hot">特配奶粉</a>
+									<a href="#">妈妈奶粉</a>
+									<a href="#">成人奶粉</a>
+								</p>
+							</li>
+							<li class="care">
+								<h3>屁屁护理</h3>
+								<p class="second_p">
+									<a href="#">纸尿裤</a>
+									<a href="#" class="hot">拉拉裤</a>
+									<a href="#">隔尿垫/布尿裤</a>
+									<a href="#" class="hot">宝宝湿巾</a>
+								</p>
+							</li>
+							<li class="diaper_bigname">
+								<h3>全球纸尿裤大牌</h3>
+								<p class="second_p">
+									<a href="#" class="hot">尤妮佳</a>
+									<a href="#" class="hot">花王</a>
+									<a href="#" class="hot">GOON大王天使</a>
+									<a href="#">GOON大王维E</a>
+									<a href="#" class="hot">Pampers帮宝适</a>
+									<a href="#">Pampers&nbsp;care帮宝适棉柔</a>
+									<a href="#">Huggies&nbsp;Gold好奇金装</a>
+									<a href="#">Huggies&nbsp;platinum好奇铂金装</a>
+									<a href="#" class="hot">Mamypoko&nbsp;妈咪宝贝</a>
+									<a href="#">Libero丽贝乐</a>
+									<a href="#">Bella&nbsp;Baby&nbsp;Happy贝拉宝贝</a>
+									<a href="#">BioFities爱婴舒坦</a>
+									<a href="#">BAMBO班博</a>
+								</p>
+							</li>
+							<li class="milk_bigname">
+								<h3>全球奶粉大牌</h3>
+								<p class="second_p">
+									<a href="#" class="hot">德国爱他美</a>
+									<a href="#" class="hot">德国Hipp</a>
+									<a href="#">德国Topfer</a>
+									<a href="#" class="hot">荷兰Nutrilon</a>
+									<a href="#" class="hot">荷兰Herobaby</a>
+									<a href="#">英国CowGate</a>
+									<a href="#">澳洲Aptamil</a>
+									<a href="#">德国holle</a>
+									<a href="#">英国Aptamil</a>
+									<a href="#">授权行货惠氏启赋</a>
+									<a href="#">港版美赞臣</a>
+									<a href="#">授权行货爱他美</a>
+									<a href="#">授权行货诺优能</a>
+									<a href="#">授权行货&nbsp;喜宝</a>
+									<a href="#">美国MeadJohnson</a>
+								</p>
+							</li>
+						</ul>
+						<ul class="second_menu_brands">
+							<h3>热卖大牌</h3>
+							<li style="border-bottom: none;border-right: none;"><a href="#"><img src="img/category_brands1.jpg"/></a></li>
+							<li style="border-bottom: none;border-right: none;"><a href="#"><img src="img/category_brands2.jpg"/></a></li>
+							<li style="border-bottom: none;"><a href="#"><img src="img/category_brands3.jpg"/></a></li>
+							<li style="border-bottom: none;border-right: none;"><a href="#"><img src="img/category_brands4.jpg"/></a></li>
+							<li style="border-bottom: none;border-right: none;"><a href="#"><img src="img/category_brands5.jpg"/></a></li>
+							<li style="border-bottom: none;"><a href="#"><img src="img/category_brands6.jpg"/></a></li>
+							<li style="border-right: none;"><a href="#"><img src="img/category_brands7.jpg"/></a></li>
+							<li style="border-right: none;"><a href="#"><img src="img/category_brands8.jpg"/></a></li>
+							<li><a href="#"><img src="img/category_brands9.jpg"/></a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--两边滚动效果-->
+		<div id="aside_left">
+			<img src="img/aside_left.png"  class="img_one"/>
+			<img src="img/aside_left_qr.png" class="img_two"/>
+		</div>
+		<div id="aside_right">
+			<ul class="list">
+				<li class="mycart">
+					<a href="#">
+						<i class="iconfont icon-gouwuche"></i>
+						<p>购物车</p>
+					</a>
+				</li>
+				<li class="advisory">
+					<a href="#">
+						<i class="iconfont icon-zixun"></i>
+						<p>咨询</p>
+					</a>
+				</li>
+				<li class="weixin">
+					<a href="#">
+						<i class="iconfont icon-weixin"></i>
+						<p>微信</p>
+						<div class="weixin_qr">
+							<img src="img/aside_right_weixin.png" />
+						</div>
+					</a>
+				</li>
+			</ul>
+			<div class="toTop">
+				<i></i>
+			</div>
+			<div class="ad">广告</div>
+		</div>
+	</body>
+</html>

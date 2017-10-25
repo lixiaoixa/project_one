@@ -1,0 +1,231 @@
+#login{
+	width: 965px;
+	height: 502px;
+	margin: 20px auto 0px;
+	padding-top: 20px;
+}
+#login .left{
+	width: 600px;
+	float: left;
+	position: relative;
+}
+#login .left .logo{
+    width: 150px;
+    height: 100px;
+}
+#login .left .logo a{
+    width: 150px;
+    height: 100px;
+    display: block;
+}
+#login .left .logo a img{
+	display: block;
+}
+#login .left .app{
+	width: 600px;
+	height: 402px;
+	position: absolute;
+	left: 0px;
+	top:0px;
+	z-index: -1;;
+}
+#login .left .app .bg{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+#login .left .app .qr{
+	width: 64px;
+	height: 66px;
+	display: block;
+	position: absolute;
+	left: 166px;
+	top: 238px;
+}
+#login .left .app .apple{
+	width: 122px;
+	height: 34px;
+	position: absolute;
+	left: 255px;
+	top:228px;
+}
+#login .left .app .android{
+	width: 122px;
+	height: 34px;
+	position: absolute;
+	left: 255px;
+	top:278px;
+}	 		 	
+#login .right{
+	margin-top: 74px;
+	width: 304px;
+    box-shadow: 0 0 4px rgba(0,0,0,.075);
+    padding: 0 20px 20px 20px;
+    float: right;
+}
+#login .right .top{
+	width: 304px;
+	color: #E31256;
+    height: 60px;
+    line-height: 60px;
+    margin-bottom: 13px;
+}
+#login .right .top .l{
+	width: 80px;
+	height: 60px;
+	display: block;
+	float: left;
+	font-size: 20px;
+	color: #f450a2;
+}
+#login .right .top .r{
+	width: 152px;
+	height: 60px;
+	display: block;
+	float: right;
+}
+#login .right .top .r i{
+	font-style: normal;
+	color: #f450a2 ;
+	font-size: 12px;
+}
+#login .right .top .r a{
+	font-size: 12px;
+	color: #666666;
+}
+#login .right form{
+	width: 304px;
+	height: 155px;
+	display: block;
+	position: relative;
+}
+#login .right form .number{
+	background-color: #FFF;
+    border: 1px solid #CFCFCF;
+    box-shadow: 0 0 2px 1px rgba(207,207,207,.4) inset;
+    height: 37px;
+    width: 302px;
+    margin-bottom: 17px;
+}
+#login .right form .number img{
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin: 9px 0px;
+	float: left;
+}
+#login .right form .number input{
+	background: none repeat scroll 0 0 rgba(0,0,0,0);
+    border:none;
+    color: #000;
+    font-size: 14px;
+    height: 39px;
+    line-height:39px;
+    outline:none;
+    width: 280px;
+    float: left;
+    padding-left: 2px;	
+}
+#login .right form .password{
+	background-color: #FFF;
+    border: 1px solid #CFCFCF;
+    box-shadow: 0 0 2px 1px rgba(207,207,207,.4) inset;
+    height: 37px;
+    width: 302px;
+    margin-bottom: 17px;
+    position: relative;
+}
+/*#login .right form .tip{
+	width: auto;
+	height: 22px;
+	position: absolute;
+	left:8px;
+	top:80px;
+	display: none;
+}
+#login .right form .tip p{
+	font-size: 12px;
+	color: #666;
+    line-height: 20px;
+    border: 1px solid #ffbdbf;
+    background: snow;
+    height: 22px;
+    width: auto;
+    text-align: center;
+    padding: 0px 6px 0px 6px;
+}
+#login .right form .tip img{
+	width: 14px;
+	height: 8px;
+	display: block;
+	position: absolute;
+	left:10px;
+	top:23px;
+}*/
+#login .right form .password img{
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin: 9px 0px;
+	float: left;
+}
+#login .right form .password input{
+	background: none repeat scroll 0 0 rgba(0,0,0,0);
+    border:none;
+    color: #000;
+    font-size: 14px;
+    height: 39px;
+    line-height:39px;
+    outline:none;
+    width: 278px;
+    float: left;
+    padding-left: 4px;	
+}
+#login .right form .btn{
+	background-color: #F450A2;
+    border-radius: 2px;
+    width: 283px;
+    height: 41px;
+    line-height: 41px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    cursor: pointer;
+    text-align: center;
+    
+}
+#login .right .third_login{
+	width: 304px;
+	margin-top: 17px;
+}
+#login .right .third_login p{
+	font-size: 12px;
+	color: #066666;
+	width: 110px;
+	height: 21px;
+	line-height: 21px;
+	float: left;
+}
+#login .right .third_login .third_login_wx,.third_login_wb{
+	display: block;
+	width: 24px;
+	height: 24px;
+	float: left;
+	margin-left: 8px;
+}
+#login .right .third_login .third_login_wx img{
+	border-radius: 12px;
+}
+#login .right .third_login .third_login_wb img{
+	border-radius: 12px;
+}
+#footer{
+	padding-top: 20px;
+    text-align: center;
+    padding: 30px;
+    line-height: 22px;
+    font-size: 12px;
+    font-family: Verdana,Geneva,sans-serif;
+    color: #ccc;
+}

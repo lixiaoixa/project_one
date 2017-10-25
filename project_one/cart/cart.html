@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.12.3.js"></script>
+		<script src="js/jquery.cookie.js"></script>
+		<link type="text/css"  href="css/reset.css" rel="stylesheet"/>
+		<script src="js/mycart.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/cart.css"/>
+		<link rel="stylesheet" href="icon/iconfont.css" />
+		<script src="js/header.js"></script>
+		<script type="text/javascript" src="js/footer.js" ></script>
+		<script src="js/aside_left_right.js"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<div id="header">
+			<div class="header_main">
+				<a href="#" class="phone">
+					<img src="img/phone_03.jpg" />
+				    <span>手机蜜芽</span>
+				</a>
+				<div class="right" style="position: relative;">
+					<span>你好，欢迎来到蜜芽！</span>
+					<a href="../login/login.html" class="login">登录</a>
+					<b>|</b>
+					<a href="../register/register.html" class="register">免费注册</a>
+					<a href="#" class="help">帮助中心</a>
+					<div class="allselect" style="position: absolute; left: -692px; top:269px;">
+						<input type="checkbox" id="allselect_img"  checked="checked"/>
+						<span class="allselect_word">全选</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--广告-->
+		<div id="big">
+			<div class="logo">
+				<div class="logo_main">
+					<div class="left">
+						<img src="img/logo.png" />
+					</div>
+					<div class="right">
+						<img src="img/mycart_one.gif" />
+						<img src="img/mycart_two.gif" />
+						<img src="img/mycart_three.gif" />
+					</div>
+				</div>
+			</div>
+			<div class="mycart_detail">
+				<!--购物车没有商品时-->
+				<!--<div class='nothing'>
+					<div class='empty'>
+						<img src='img/empty.jpg' class='empty_img'>
+					</div>
+					<div class='tipword'>
+						<p class='word_one'>您还没有为您可爱的宝宝挑选任何商品哦~</p>
+						<p class='word_two'>您可以去<a href='../index/index.html'>首页</a>挑选宝宝喜欢的商品</p>
+					</div>
+				</div>-->
+				
+				<!--购物车有商品时-->
+				<!--<div class="have_goods">
+					<div class="title">
+						<h2>我的购物车</h2>
+						<div class="top_line"></div>
+					</div>
+					<div class="menu">
+						<div class="allselect">
+							<input type="checkbox" class="allselect_img"  checked="checked"/>
+							<span class="allselect_word">全选</span>
+						</div>
+						<div class="goods_name">商品</div>
+						<div class="scale">规格</div>
+						<div class="single_price">单价</div>
+						<div class="goods_num">数量</div>
+						<div class="pre_count">小计</div>
+						<div class="option">操作</div>
+					</div>
+					<div class="addgoods">
+						<div class="addgoods_top"></div>
+						<div class="addgoods_bottom">
+							<input type="checkbox" class="isselect" checked="checked">
+							<img src="img/aside_left_qr.png/" class="goods_pic">
+							<div class="goods_word">
+								<div class="goods_detail">五个小卡车 Five Trucks 源自美国婴童品牌 婴儿手口湿巾 80片装X3包x2组+25片装X5包x2组+10片装X10包 套装</div>
+								<div class="aleady">已选:80片装X3包x2组+25片装X</div>
+							</div>
+							<div class="new_old">
+								<div class="new">￥122</div>
+								<div class="old"><del>￥166</del></div>
+							</div>
+							<div class="add_red">
+								<input class="reduce" type="button" value="-" />
+								<input class=" goods_number" type="text" value="1" />
+								<input class="add" type="button" value="+" />
+							</div>
+							<div class="small_counter">￥122</div>
+							<div class="remove">删除</div>
+						</div>
+					</div>
+					<div class="totally">
+						<div class="select_num">已选择商品<span>0</span>件</div>
+						<div class="total_price">合计(不含运费和进口税):<span>￥0</span></div>
+						<input type="button" class="tocount" value="去结算"/>
+			    	</div>
+			   </div>-->
+			</div>
+		</div>
+		<!--底部-->
+		<div id="footer">
+			<div class="footer_main">
+				<div class="service">
+					<a href="#" style="margin-left: 50px;">
+						<i class="iconfont icon-pinpaixinlai"></i>
+						<b>可信赖</b>
+						<p>进口母婴特卖</p>
+					</a>
+					<a href="#">
+						<i class="iconfont icon-zhengpinbaozheng"></i>
+						<b>无忧</b>
+						<p>正品保证</p>
+					</a>
+					<a href="#">
+						<i class="iconfont icon-7tianwuliyoutuihuanhuo"></i>
+						<b>7天</b>
+						<p>无理由退货</p>
+					</a>
+					<a href="#">
+						<i class="iconfont icon-cangku"></i>
+						<b>恒温仓</b>
+						<p>完善的货物仓储</p>
+					</a>
+					<a href="#">
+						<i class="iconfont icon-shandianfahuo"></i>
+						<b>24小时</b>
+						<p>快速发货</p>
+					</a>
+					<a href="#">
+						<i class="iconfont icon-dianzan"></i>
+						<b>100万</b>
+						<p>妈妈口碑信赖</p>
+					</a>
+				</div>
+				<div class="help">
+					<div class="left">
+						<ul class="like">
+							<li class="fist">使用帮助</li>
+							<li><a href="#">新手指南</a></li>
+							<li><a href="#">蜜粉值体系</a></li>
+							<li><a href="#">蜜豆体系</a></li>
+							<li><a href="#">正品承诺</a></li>
+						</ul>
+						<ul class="like">
+							<li class="fist">支付方式</li>
+							<li><a href="#">支付方式</a></li>
+							<li><a href="#">支付流程</a></li>
+							<li><a href="#">跨境进口税</a></li>
+						</ul>
+						<ul class="like">
+							<li class="fist">配送方式</li>
+							<li><a href="#">包邮政策</a></li>
+							<li><a href="#">发货时间</a></li>
+							<li><a href="#">配送区域</a></li>
+							<li><a href="#">验货签收</a></li>
+						</ul>
+						<ul class="like">
+							<li class="fist">售后服务</li>
+							<li><a href="#">退货政策</a></li>
+							<li><a href="#">退货流程</a></li>
+							<li><a href="#">退款方式</a></li>
+						</ul>
+						<ul class="last">
+							<li class="fist">联系方式</li>
+							<li>总裁邮箱 &nbsp;&nbsp;ceo@mia.com</li>
+							<li>商务合作&nbsp;&nbsp; bd@mia.com</li>
+							<li>媒体合作&nbsp;&nbsp; pr@mia.com</li>
+							<li>招商中心 &nbsp;&nbsp;zhaoshang@mia.com</li>
+							<li>企业采购 &nbsp;&nbsp;qiye@mia.com</li>
+						</ul>
+					</div>
+					<div class="right">
+						<h4>关注蜜芽</h4>
+						<div class="qr_code">
+							<img src="img/qr_code.jpg" />
+						</div>
+						<div class="wx_wb">
+							<a href="#"><img src="img/weibo.gif"/></a>
+							<img src="img/weixin.gif" class="qr_weixin"/>
+							<img src="img/weibo_weixin.jpg" class="db_img"/>
+						</div>
+					</div>
+				</div>
+				<div class="connect">
+					<p class="top">
+						<a href="#">关于蜜芽</a>
+						<a href="#">加入蜜芽</a>
+						<a href="#">商务合作</a>
+						<a href="#">帮助中心</a>
+						<a href="#">联系我们</a>
+						<a href="#">友情链接</a>
+						<a href="#">触屏版</a>
+						<a href="#">媒体报道</a>
+					</p>
+					<div class="word">
+						<div>
+                                                                      京公网安备：11010502027270&nbsp;|&nbsp;营业执照：91110105582599307U&nbsp;|&nbsp;食品经营许可证：SP1101051410296669&nbsp;|&nbsp;出版物经营许可证：新出发京零字第朝160088号|京ICP证140430号 
+						</div>
+						<div>
+							 京ICP备14006215号&nbsp;|&nbsp;员工舞弊举报：jiancha@mia.com&nbsp;电话：010-56733467
+						</div>
+						<div>
+							通过本网站直接或者间接地推销商品或者服务的商业宣传活动均属"广告"
+						</div>
+						<div>
+            				Copyright&nbsp;©&nbsp;2017 北京花旺在线商贸有限公司 Mia.com&nbsp;保留一切权利。
+						</div>
+					</div>
+					<div class="footer_logo">
+						<a href="#"><img src="img/footer_logo1.png"/></a>
+						<a href="#"><img src="img/footer_logo2.png"/></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--两边滚动效果-->
+		<div id="aside_left">
+			<img src="img/aside_left.png"  class="img_one"/>
+			<img src="img/aside_left_qr.png" class="img_two"/>
+		</div>
+		<div id="aside_right">
+			<ul class="list">
+				<li class="mycart">
+					<a href="#">
+						<i class="iconfont icon-gouwuche"></i>
+						<p>购物车</p>
+					</a>
+				</li>
+				<li class="advisory">
+					<a href="#">
+						<i class="iconfont icon-zixun"></i>
+						<p>咨询</p>
+					</a>
+				</li>
+				<li class="weixin">
+					<a href="#">
+						<i class="iconfont icon-weixin"></i>
+						<p>微信</p>
+						<div class="weixin_qr">
+							<img src="img/aside_right_weixin.png" />
+						</div>
+					</a>
+				</li>
+			</ul>
+			<div class="toTop">
+				<i></i>
+			</div>
+			<div class="ad">广告</div>
+		</div>
+	</body>
+</html>
